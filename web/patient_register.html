@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration Form</title>
+    <link rel="icon" href="images/icon.png">
+    <style>
+        body {
+            background-image: url(images/appp.jpg);
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+            height: 110vh;
+            overflow: auto;
+        }
+
+        form {
+            background-image: url(images/appp.jpg);
+            background-size: cover;
+            max-width: 500px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        input[type="date"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .login-link {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .login-link a {
+            color: blue;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="uploadServlet" enctype="multipart/form-data">
+        <div class="title">
+            <h2>Patient Registration Form</h2>
+        </div>
+
+        <!-- Personal Information -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <!-- Contact Information -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="pass" name="pass" required>
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="cpass" name="cpass" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="pno" name="pno" required>
+
+        <!-- Address Information -->
+        <label for="address">Address:</label>
+        <textarea id="addre" name="addre" rows="4" required></textarea>
+
+        <label for="photo">Photo:</label>
+        <input type="file" id="photo" name="photo" accept="image/*" required>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+
+        <div class="login-link">
+            <p>Already Have An Account? <a href="patient_login.html">Login</a></p>
+        </div>
+    </form>
+</body>
+</html>
