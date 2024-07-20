@@ -9,6 +9,7 @@
 </ol>
 <h2 id="description">Description</h2>
 
+<p> HealthCare Appointment System is a web based application which is built using java, Html, Css and JavaScript.This application helps in management of Patients, doctors, Specialist and admin in a easy and comfortable way.using this Application patients can quickly Register, Login, view his/her profile,book Appointment, Upload prescription if medicine already taken or not,view Report,view Appointments, pay online, Order Medicine, Track medicine and logout. Admin can add Medicine,view patients list, view Doctors list, Specialist list,Accept/Decline Medicine order by Patient,logout.Doctor can login, view profile, viewAppointments, Attend Patients, Discuss with specialist if required, upload prescription and logout. Specialist can login, doctor request, Report Treatment and logout. For security,Used Encryption for secure Patient reports and details </p>
  
  <h2 id="lang">Languages and Technology Used</h2>
  <ul>
@@ -86,3 +87,8 @@
   <li><a href="#logout">  Logout</li>
 
 </ul>
+
+<h2 id="db">DataBase</h2>
+<p>
+  The application uses a MySQL database to manage and store patient and appointment information efficiently.
+</p>
